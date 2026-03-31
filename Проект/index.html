@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Памятка по информационной безопасности | Фишинговые ссылки</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Памятка по безопасности</h1>
+            <p class="subtitle">Как распознать фишинговую ссылку и защитить свои данные</p>
+            <div class="divider"></div>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">Алгоритм проверки</button>
+            <button class="tab-btn" data-tab="tab2">Примеры угроз</button>
+            <button class="tab-btn" data-tab="tab3">Чек-лист</button>
+            <button class="tab-btn" data-tab="tab4">Проверь себя</button>
+            <button class="tab-btn" data-tab="tab5">Куда сообщить</button>
+        </div>
+
+        <!-- Tab 1: Algorithm -->
+        <div class="tab-content active" id="tab1">
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">кибератак связаны с фишингом</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">35-40%</div>
+                    <div class="stat-label">молодежи переходили по фишинговым ссылкам</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25%</div>
+                    <div class="stat-label">фишинговых сайтов копируют Госуслуги</div>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h2>Алгоритм проверки ссылки в три шага</h2>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Наведите курсор</h3>
+                    <p>На компьютере наведите курсор на ссылку. На мобильном устройстве нажмите и удерживайте ссылку. Всплывающая подсказка покажет настоящий адрес перехода.</p>
+                    <div class="step-note note-bad">Пример подделки: gosuslugi-verify.ru</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Проверьте домен</h3>
+                    <p>Внимательно прочитайте адрес сайта. Ищите опечатки, лишние символы, необычные окончания или подозрительные слова.</p>
+                    <div class="step-note note-good">Правильный домен: gosuslugi.ru</div>
+                    <div class="step-note note-bad">Подозрительный домен: gosuslugi-oplata.ru</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Не торопитесь</h3>
+                    <p>Если ссылка вызывает сомнения — не переходите. Откройте официальный сайт через поисковую систему или из сохраненных закладок.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Examples -->
+        <div class="tab-content" id="tab2">
+            <div class="section-title">
+                <h2>Признаки фишинговых сообщений</h2>
+                <p>Злоумышленники используют разные каналы, но их объединяют общие черты</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">Электронная почта</span>
+                    </div>
+                    <div class="fake-message">
+                        «Ваша карта заблокирована. Для разблокировки перейдите по ссылке: http://sber-secure.ru»
+                    </div>
+                    <div class="analysis">
+                        <span class="analysis-label">Признаки угрозы:</span>
+                        <ul>
+                            <li>Эффект срочности (угроза блокировки)</li>
+                            <li>Подозрительный домен (не sberbank.ru)</li>
+                            <li>Неофициальный стиль обращения</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">SMS</span>
+                    </div>
+                    <div class="fake-message">
+                        «Ваш аккаунт на Госуслугах будет удален. Подтвердите данные: https://gosuslugi-verify.ru»
+                    </div>
+                    <div class="analysis">
+                        <span class="analysis-label">Признаки угрозы:</span>
+                        <ul>
+                            <li>Угроза потери доступа</li>
+                            <li>Домен с лишним словом (verify)</li>
+                            <li>Неожиданное сообщение</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-tag">Мессенджеры</span>
+                    </div>
+                    <div class="fake-message">
+                        «Ваш заказ ожидает подтверждения. Перейдите по ссылке: https://wildberries-return.ru»
+                    </div>
+                    <div class="analysis">
+                        <span class="analysis-label">Признаки угрозы:</span>
+                        <ul>
+                            <li>Неожиданное сообщение о заказе</li>
+                            <li>Подозрительный домен (не wildberries.ru)</li>
+                            <li>Ссылка-приманка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-block">
+                <h4>Важно знать</h4>
+                <p>Фишинговые сайты могут использовать HTTPS-сертификаты (значок замка в адресной строке). Наличие защищенного соединения не гарантирует, что сайт является официальным.</p>
+            </div>
+        </div>
+
+        <!-- Tab 3: Checklist -->
+        <div class="tab-content" id="tab3">
+            <div class="section-title">
+                <h2>Чек-лист безопасности</h2>
+                <p>Семь правил, которые помогут защитить ваши данные</p>
+            </div>
+
+            <div class="checklist-grid">
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Проверяйте домен сайта перед переходом по ссылке</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Не доверяйте сообщениям, требующим срочных действий</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Избегайте переходов по сокращенным ссылкам (bit.ly, clck.ru)</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Вводите личные данные только на официальных сайтах</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Включите двухфакторную аутентификацию на важных сервисах</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Проверяйте информацию через официальные каналы связи</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="check-icon"></div>
+                    <div class="check-text">Сообщайте о подозрительных ссылках в киберполицию</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Quiz -->
+        <div class="tab-content" id="tab4">
+            <div class="section-title">
+                <h2>Проверьте свои знания</h2>
+                <p>Ответьте на вопросы, чтобы закрепить материал</p>
+            </div>
+
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-question" id="quizQuestion"></div>
+                <div class="quiz-options" id="quizOptions"></div>
+                <div class="quiz-feedback" id="quizFeedback"></div>
+                <button class="quiz-next" id="quizNextBtn" style="display: none;">Следующий вопрос</button>
+            </div>
+            <div class="quiz-result" id="quizResult"></div>
+        </div>
+
+        <!-- Tab 5: Contacts -->
+        <div class="tab-content" id="tab5">
+            <div class="section-title">
+                <h2>Куда сообщить о фишинговой ссылке</h2>
+                <p>Если вы обнаружили подозрительную ссылку или стали жертвой мошенников</p>
+            </div>
+
+            <div class="contacts-grid">
+                <a href="https://мвд.рф/киберполиция" target="_blank" class="contact-card">
+                    <div class="contact-title">Киберполиция России</div>
+                    <div class="contact-desc">Официальный портал МВД для сообщений о киберпреступлениях</div>
+                </a>
+                <a href="https://www.virustotal.com" target="_blank" class="contact-card">
+                    <div class="contact-title">VirusTotal</div>
+                    <div class="contact-desc">Сервис для проверки подозрительных ссылок и файлов</div>
+                </a>
+                <a href="https://opentip.kaspersky.com" target="_blank" class="contact-card">
+                    <div class="contact-title">Kaspersky Threat Intelligence</div>
+                    <div class="contact-desc">Проверка доменов и URL через базу "Лаборатории Касперского"</div>
+                </a>
+            </div>
+
+            <div class="emergency-block">
+                <h4>Что делать, если вы уже перешли по ссылке и ввели данные</h4>
+                <ul>
+                    <li>Немедленно смените пароль от скомпрометированного аккаунта</li>
+                    <li>Заблокируйте банковскую карту через приложение банка или по номеру 112</li>
+                    <li>Сообщите в службу поддержки сервиса, данные которого были введены</li>
+                    <li>Обратитесь в киберполицию с заявлением</li>
+                </ul>
+            </div>
+
+            <div class="qr-block">
+                <p>QR-код для быстрого доступа к памятке</p>
+                <div class="qr-placeholder">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="120" height="120" fill="#1a1a1a"/>
+                        <rect x="10" y="10" width="20" height="20" fill="white"/>
+                        <rect x="40" y="10" width="20" height="20" fill="white"/>
+                        <rect x="70" y="10" width="20" height="20" fill="white"/>
+                        <rect x="10" y="40" width="20" height="20" fill="white"/>
+                        <rect x="70" y="40" width="20" height="20" fill="white"/>
+                        <rect x="10" y="70" width="20" height="20" fill="white"/>
+                        <rect x="40" y="70" width="20" height="20" fill="white"/>
+                        <rect x="70" y="70" width="20" height="20" fill="white"/>
+                        <rect x="100" y="100" width="10" height="10" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Памятка по информационной безопасности | Проект по защите от фишинговых атак</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
